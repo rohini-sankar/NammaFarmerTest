@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActSeedsLandingSell">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActSeedsLandingSell">
+    <TextView
+        android:id="@+id/hdrSeedsSell2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Sell Seeds"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblEnterYourDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Enter Your Details:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hdrSeedsSell2" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEnterYourDetails" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="PhoneNumber"
+        android:inputType="phone"
+        android:text="(+91)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <EditText
+        android:id="@+id/editTextEMail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="eMail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsSpices"
+        android:layout_width="105sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Spices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cBoxSeedsWheat"
+        app:layout_constraintTop_toBottomOf="@id/cBoxSeedsGarlic" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsOthers"
+        android:layout_width="105sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Others"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cBoxSeedsWheat"
+        app:layout_constraintTop_toBottomOf="@id/cBoxSeedsSpices" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsBeans"
+        android:layout_width="105sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Beans"
+        app:layout_constraintStart_toEndOf="@+id/cBoxSeedsRice"
+        app:layout_constraintTop_toBottomOf="@id/cBoxSeedsKarela" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsCarrot"
+        android:layout_width="105sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Carrot"
+        app:layout_constraintStart_toEndOf="@+id/cBoxSeedsRice"
+        app:layout_constraintTop_toBottomOf="@id/cBoxSeedsBeans" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsSquash"
+        android:layout_width="105sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Squash"
+        app:layout_constraintStart_toEndOf="@+id/cBoxSeedsRice"
+        app:layout_constraintTop_toBottomOf="@id/cBoxSeedsCarrot" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsRadish"
+        android:layout_width="105sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Radish"
+        app:layout_constraintStart_toEndOf="@+id/cBoxSeedsRice"
+        app:layout_constraintTop_toBottomOf="@id/cBoxSeedsSquash" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsWheat"
+        android:layout_width="105sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Wheat"
+        app:layout_constraintStart_toEndOf="@+id/cBoxSeedsRice"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEMail" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsKarela"
+        android:layout_width="105sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Karela"
+        app:layout_constraintStart_toEndOf="@+id/cBoxSeedsRice"
+        app:layout_constraintTop_toBottomOf="@id/cBoxSeedsWheat" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsMillets"
+        android:layout_width="105sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Millets"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cBoxSeedsWheat"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEMail" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsChilli"
+        android:layout_width="105sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Chilli"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cBoxSeedsWheat"
+        app:layout_constraintTop_toBottomOf="@id/cBoxSeedsMillets" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsGinger"
+        android:layout_width="105sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Ginger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cBoxSeedsWheat"
+        app:layout_constraintTop_toBottomOf="@id/cBoxSeedsChilli" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsGarlic"
+        android:layout_width="105sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Garlic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cBoxSeedsWheat"
+        app:layout_constraintTop_toBottomOf="@id/cBoxSeedsGinger" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsPumpkin"
+        android:layout_width="105sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Pumpkin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cBoxSeedsBrinjal" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsBendi"
+        android:layout_width="105sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Bendi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cBoxSeedsTomato" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsBrinjal"
+        android:layout_width="105sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Brinjal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cBoxSeedsBendi" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsTomato"
+        android:layout_width="105sp"
+        android:layout_height="35sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Tomato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cBoxSeedsOnion" />
+
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsRice"
+        android:layout_width="105dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Rice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEMail" />
+
+    <CheckBox
+        android:id="@+id/cBoxSeedsOnion"
+        android:layout_width="105sp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Onion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cBoxSeedsRice" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cBoxSeedsRadish" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

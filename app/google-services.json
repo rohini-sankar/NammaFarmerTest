@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "706552881840",
+    "firebase_url": "https://nammafarmerdb.firebaseio.com",
+    "project_id": "nammafarmerdb",
+    "storage_bucket": "nammafarmerdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706552881840:android:5e5e10446b23f3a5459175",
+        "android_client_info": {
+          "package_name": "com.example.nammafarmer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706552881840-4jqm36ftj846q02us313vs84f0ng4sd9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0mu5Om2Oy2zxSPrlc_pxL2oXNVUNjqXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706552881840-4jqm36ftj846q02us313vs84f0ng4sd9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
